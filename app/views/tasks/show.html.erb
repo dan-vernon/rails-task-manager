@@ -1,0 +1,8 @@
+<div class="jumbotron">
+<em><%= @task.completed ? "Task completed" : "INCOMPLETE" %>
+</em>
+<h1 class="display-4"><%= @task.title %> </h1>
+
+<p class="lead"><%= @task.details %></p>
+<p><%= link_to(edit_path) do %><i class="fas fa-pencil-alt"></i> Edit task <% end %> | <i class="fas fa-check-circle"></i> <%= link_to "Complete task", complete_path  %> | <i class="fas fa-list"></i> <%= link_to "Return to tasks list", tasks_path  %></p>
+</div>

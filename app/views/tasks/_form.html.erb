@@ -1,0 +1,9 @@
+<div class="form-group">
+
+<%= form_for(@task) do |f| %>
+  <%= f.text_field :title, :class => 'form-control' %>
+  <%= f.text_area :details, :class => 'form-control' %>
+  <%= submit_tag("Update tasks") %>
+<% end %>
+
+</div>
