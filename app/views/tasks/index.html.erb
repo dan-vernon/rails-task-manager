@@ -11,11 +11,11 @@
   <th class="text-center">Delete</th>
 </thead>
 
+<tbody>
 
 <% @tasks.each do |task| %>
 
 
-<tbody>
 
   <tr >
     <td class="text-center">
@@ -29,8 +29,8 @@
       <i class="fas fa-trash-alt"></i>
       <% end %>
     </td>
+  </tr>
 
     <% end %>
-  </tr>
 </tbody>
 </table>
